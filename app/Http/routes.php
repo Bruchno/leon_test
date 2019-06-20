@@ -12,3 +12,6 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),'middleware' => [ 'we
 
     include('routes/admin.routes.php');
 });
+
+Route::get('/table', 'indexTableController@index');
+Route::post('/vertical', 'indexTableController@tableajax');
